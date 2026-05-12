@@ -1,12 +1,18 @@
 if status is-interactive
 # Commands to run in interactive sessions can go here
-starship init fish | source
+if type -q lsd
+    starship init fish | source
+end
 
-
-alias ls="lsd -l"
-#alias cat="bat"
-alias fd="fdfind"
 alias zel="zellij"
+
+if type -q lsd
+    alias ls="lsd -l"
+end
+
+if type -q fdfind
+    alias fd="fdfind"
+end
 
 if type -q nvim
     set -gx EDITOR nvim
@@ -18,14 +24,15 @@ end
 ssh-add $HOME/.ssh/golden-finch
 
 # opencode
-fish_add_path /home/maximo/.opencode/bin
+fish_add_path $HOME/.opencode/bin
 fish_add_path /usr/local/cuda/bin
 fish_add_path $HOME/build/llama.cpp/build/bin
 
 set -gx LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 
-atuin init fish | source
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
+if type -q brew
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
+end
 
 end # is-interactive
 
