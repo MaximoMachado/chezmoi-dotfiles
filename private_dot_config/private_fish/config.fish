@@ -2,7 +2,7 @@ if status is-interactive
 # Commands to run in interactive sessions can go here
 starship init fish | source
 
-alias vim="nvim"
+
 alias ls="lsd -l"
 #alias cat="bat"
 alias fd="fdfind"
@@ -10,6 +10,7 @@ alias zel="zellij"
 
 if type -q nvim
     set -gx EDITOR nvim
+    alias vim="nvim"
 else
     set -gx EDITOR vim
 end
