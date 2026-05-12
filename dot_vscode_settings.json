@@ -1,0 +1,364 @@
+{
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
+    "git.blame.editorDecoration.enabled": true,
+    "editor.lineNumbers": "relative",
+    "files.associations": {
+        "*.toml": "toml",
+        "*.toolchain": "cmake",
+        "*.in": "cmake",
+        "*.jsonschema": "json"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.smoothScrolling": true,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 20,
+    "editor.fontFamily": "'JetBrainsMono NF', 'JetBrainsMono Nerd Font', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.lineHeight": 1.15,
+    "editor.fontSize": 15,
+    "editor.bracketPairColorization.enabled": true,
+    "vim.surround": true,
+    "vim.highlightedyank.enable": true,
+    "vim.startInInsertMode": false,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "\\"
+            ],
+            "after": [
+                "<leader>"
+            ]
+        }
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": [
+                "i",
+                "s"
+            ],
+            "after": [
+                "i",
+                "\\",
+                "w"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Space>"
+            ],
+            "after": [
+                "<Nop>"
+            ]
+        },
+        {
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "y",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "p"
+            ]
+        },
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "2",
+                "f"
+            ]
+        },
+        {
+            "before": [
+                "S"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "2",
+                "F"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "f"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "F"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "F"
+            ]
+        },
+        {
+            "before": [
+                "<Tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<S-Tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<"
+            ],
+            "after": [
+                "<",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "after": [
+                ">",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "i",
+                "s"
+            ],
+            "after": [
+                "i",
+                "\\",
+                "w"
+            ]
+        }
+    ],
+    "vim.smartRelativeLine": true,
+    "vim.joinspaces": false,
+    "vim.camelCaseMotion.enable": true,
+    "vim.replaceWithRegister": true,
+    "vim.sneakReplacesF": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.useSystemClipboard": false,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-p>": false
+    },
+    "vim.foldfix": true,
+    "disableLigatures.ligatures": [
+        ".=",
+        ".-",
+        ":=",
+        "=:=",
+        "==",
+        "!=",
+        "===",
+        "!==",
+        "=/=",
+        "<-<",
+        "<<-",
+        "<--",
+        "<-",
+        "<->",
+        "->",
+        "-->",
+        "->>",
+        ">->",
+        "<=<",
+        "<<=",
+        "<==",
+        "<=>",
+        "=>",
+        "==>",
+        "=>>",
+        ">=>",
+        ">>=",
+        ">>-",
+        ">-",
+        "<~>",
+        "-<",
+        "-<<",
+        "=<<",
+        "<~~",
+        "<~",
+        "~~",
+        "~>",
+        "~~>",
+        "<<<",
+        "<<",
+        "<=",
+        "<>",
+        ">=",
+        ">>",
+        ">>>",
+        "{.",
+        "{|",
+        "[|",
+        "<:",
+        ":>",
+        "|]",
+        "|}",
+        ".}",
+        "<|||",
+        "<||",
+        "<|",
+        "<|>",
+        "|>",
+        "||>",
+        "|||>",
+        "<$",
+        "<$>",
+        "$>",
+        "<+",
+        "<+>",
+        "+>",
+        "<*",
+        "<*>",
+        "*>",
+        "\\\\",
+        "\\\\\\",
+        "\\*",
+        "*/",
+        "///",
+        "//",
+        "<//",
+        "<!==",
+        "</>",
+        "-->",
+        "/>",
+        ";;",
+        "::",
+        ":::",
+        "..",
+        "...",
+        "..<",
+        "!!",
+        "??",
+        "%%",
+        "&&",
+        "||",
+        "?.",
+        "?:",
+        "+",
+        "++",
+        "+++",
+        "-",
+        "--",
+        "---",
+        "*",
+        "**",
+        "***",
+        "~=",
+        "~-",
+        "www",
+        "-~",
+        "~@",
+        "^=",
+        "?=",
+        "/=",
+        "/==",
+        "|=",
+        "||=",
+        "#!",
+        "##",
+        "###",
+        "####",
+        "#{",
+        "#[",
+        "]#",
+        "#(",
+        "#?",
+        "#_",
+        "#_("
+    ],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSaveMode": "modifications"
+}
