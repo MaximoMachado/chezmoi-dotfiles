@@ -30,7 +30,8 @@ fish_add_path $HOME/build/llama.cpp/build/bin
 
 set -gx LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 
-if type -q brew
+# If path to brew bin exists, then source needed ENV vars
+if test -f /home/linuxbrew/.linuxbrew/bin/brew
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
 end
 
