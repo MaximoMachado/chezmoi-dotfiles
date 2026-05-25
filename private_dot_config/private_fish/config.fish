@@ -5,11 +5,11 @@ if status is-interactive
         starship init fish | source
     end
 
-    if type -q zellij;  and alias zel="zellij"
-    if type -q lsd;     and alias ls="lsd -l"
-    if type -q duf;     and alias df="duf"
-    if type -q fdfind;  and alias fd="fdfind"
-    if type -q rg;      and alias rg="rg -S"
+    if type -q zellij;  and alias zel="zellij"; end
+    if type -q lsd;     and alias ls="lsd -l"; end
+    if type -q duf;     and alias df="duf"; end
+    if type -q fdfind;  and alias fd="fdfind"; end
+    if type -q rg;      and alias rg="rg -S"; end
 
     if type -q nvim
         set --global --export EDITOR nvim
