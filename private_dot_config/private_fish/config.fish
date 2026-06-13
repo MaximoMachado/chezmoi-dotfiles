@@ -29,6 +29,7 @@ if status is-interactive
     abbr -a rm 'rm -I'
     
     # Git aliases
+    abbr -a g "git"
     abbr -a gs "git status"
     abbr -a gco "git commit -m"
     abbr -a gau "git add -u"
