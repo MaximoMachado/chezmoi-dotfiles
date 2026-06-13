@@ -34,6 +34,7 @@ if status is-interactive
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
     end
 
+    source $HOME/.global_pyvenv/bin/activate.fish
 end # is-interactive
 
 # Test if directory
